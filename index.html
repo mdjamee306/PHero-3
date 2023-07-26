@@ -37,7 +37,8 @@
 </head>
 
 <body class="font-lato">
-    <header class="container mx-auto my-12 hidden">
+    <header class="hidden container mx-auto my-12">
+        <!-- nav starts here -->
         <nav class="md:bg-[#F85559] p-6 rounded-full">
             <div class="flex flex-row-reverse md:flex-row justify-around">
                 <div class="">
@@ -80,7 +81,130 @@
             </div>
         </nav>
     </header>
-    <footer class="footer footer-center p-10 bg-[#121212] max-w-full text-base-content rounded">
+    <!-- main starts here -->
+    <main class="container mx-auto my-12">
+        <!-- Deal of the day section starts here -->
+        <section class="mt-24">
+            <div class="flex flex-col  lg:flex-row lg:justify-between items-center gap-5">
+                <div class="text-center lg:text-left ">
+                    <h2 class="text-3xl font-bold md:text-5xl md:font-extrabold">Deal of the day</h2>
+                    <p class="font-normal mt-2 lg:font-medium md:mt-6 text-[#12121299]">Contrary to popular belief, is
+                        not
+                        simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC,
+                        making it
+                        over 2000 years old.</p>
+                </div>
+                <div class=" justify-end">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:22;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fruits card -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-12">
+                <!-- card 1 -->
+                <div class="border w-11/12 mx-auto">
+                    <figure class="px-10 pt-10 flex justify-center">
+                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
+                        <p class="font-medium text-[#12121299]">Apples</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <a href="" class="text-[#F85559]">Details</a>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="border w-11/12 mx-auto">
+                    <figure class="px-10 pt-10 flex justify-center">
+                        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
+                        <p class="font-medium text-[#12121299]">Orange</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <a href="" class="text-[#F85559]">Details</a>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="border w-11/12 mx-auto">
+                    <figure class="px-10 pt-10 flex justify-center">
+                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
+                        <p class="font-medium text-[#12121299]">Banana</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <a href="" class="text-[#F85559]">Details</a>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="border w-11/12 mx-auto">
+                    <figure class="px-10 pt-10 flex justify-center">
+                        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
+                        <p class="font-medium text-[#12121299]">Red Dragon</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <a href="" class="text-[#F85559]">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-10">
+                <button class="rounded-lg font-extrabold text-base text-white px-8 py-5 bg-[#F85559]">Shop All</button>
+            </div>
+        </section>
+    </main>
+    <!-- footer starts here -->
+    <footer class=" footer footer-center p-10 bg-[#121212] max-w-full text-base-content rounded">
         <div class="flex justify-center items-center mt-8 gap-3">
             <img src="./images/logo.png" alt="logo">
             <a class="normal-case text-xl lg:text-4xl font-extrabold text-white">Fruit Burst</a>
@@ -101,7 +225,7 @@
                 <i class="text-white fa-brands fa-instagram"></i>
             </div>
         </div>
-    </footer>  
+    </footer>
 </body>
 
 </html>
