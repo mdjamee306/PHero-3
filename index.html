@@ -37,7 +37,7 @@
 </head>
 
 <body class="font-lato">
-    <header class="container mx-auto my-12">
+    <header class="max-w-7xl mx-auto lg:my-12">
         <!-- nav starts here -->
         <nav class="md:bg-[#F85559] p-6 rounded-full flex justify-between items-center">
             <div class="order-1 lg:order-1">
@@ -192,7 +192,7 @@
                 </div>
             </div>
             <div
-                class="hidden lg:visible lg:absolute lg:flex lg:gap-24 lg:bg-white lg:px-16 lg:py-5 lg:bottom-[-78px] lg:right-[160px]">
+                class="hidden lg:visible lg:absolute lg:flex lg:gap-24 lg:bg-white lg:px-3 lg:py-2 lg:bottom-[-72px] lg:right-[90px]">
                 <div>
                     <img src="./images/fruit1.png" alt="">
                     <p class="text-[#121212CC] font-medium text-xl text-center">Olive</p>
@@ -217,7 +217,7 @@
         </section>
     </header>
     <!-- main starts here -->
-    <main class="container mx-auto my-12">
+    <main class="max-w-7xl mx-auto my-12">
         <!-- Deal of the day section starts here -->
         <section class="mt-24">
             <div class="flex flex-col  lg:flex-row lg:justify-between items-center gap-5">
@@ -237,17 +237,23 @@
                             </span>
                             days
                         </div>
+                        <div class="text-[35px]"><i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                        </div>
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:10;"></span>
                             </span>
                             hours
                         </div>
+                        <div class="text-[35px]"><i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                        </div>
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:24;"></span>
                             </span>
                             min
+                        </div>
+                        <div class="text-[35px]"><i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
                         </div>
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
@@ -268,12 +274,19 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
                         <p class="font-medium text-[#12121299]">Apples</p>
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
                         <!-- modal 1 starts from here -->
                         <button class="text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
@@ -289,13 +302,28 @@
                                         <h2 class="card-title text-xl font-bold py-2 px-8">Apples</h2>
                                         <p class="font-normal text-[#12121299]">Professional employees are there for you
                                             to pick the most amazing and fresh fruits.</p>
-                                        <div class="rating">
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
-                                                checked />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <div class="rating rating-lg rating-half">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                                         </div>
                                     </div>
                                     <div class="modal-action justify-evenly">
@@ -319,12 +347,19 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
                         <p class="font-medium text-[#12121299]">Orange</p>
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
                         <!-- modal 2 starts from here -->
                         <button class="text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
@@ -340,13 +375,28 @@
                                         <h2 class="card-title text-xl font-bold py-2 px-8">Orange</h2>
                                         <p class="font-normal text-[#12121299]">Professional employees are there for you
                                             to pick the most amazing and fresh fruits.</p>
-                                        <div class="rating">
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
-                                                checked />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <div class="rating rating-lg rating-half">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                                         </div>
                                     </div>
                                     <div class="modal-action justify-evenly">
@@ -369,12 +419,19 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
                         <p class="font-medium text-[#12121299]">Red Dragon</p>
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
                         <!-- modal 3 starts from here -->
                         <button class="text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
@@ -390,13 +447,28 @@
                                         <h2 class="card-title text-xl font-bold py-2 px-8">Red Dragon</h2>
                                         <p class="font-normal text-[#12121299]">Professional employees are there for you
                                             to pick the most amazing and fresh fruits.</p>
-                                        <div class="rating">
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
-                                                checked />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <div class="rating rating-lg rating-half">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                                         </div>
                                     </div>
                                     <div class="modal-action justify-evenly">
@@ -419,14 +491,21 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
                         <p class="font-medium text-[#12121299]">Banana</p>
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         </div>
-                        <!-- modal 2 starts from here -->
+                        <!-- modal 4 starts from here -->
                         <button class="text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
                         <dialog id="my_modal_4" class="modal">
                             <form method="dialog" class="modal-box">
@@ -466,7 +545,7 @@
                 <button class="rounded-lg font-extrabold text-base text-white px-8 py-5 bg-[#F85559]">Shop All</button>
             </div>
         </section>
-        <!-- Meet the team section starts here -->
+        <!-- Meet the team section amee is here -->
         <section class="my-2 md:my-12 w-11/12 mx-auto">
             <div class="p-6 md:p-28 lg:min-h-fit bg-no-repeat bg-cover rounded-lg"
                 style="background-image: url('./images/team.png');">
