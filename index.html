@@ -39,42 +39,48 @@
 <body class="font-lato">
     <header class="container mx-auto my-12">
         <!-- nav starts here -->
-        <nav class="md:bg-[#F85559] p-6 rounded-full">
-            <div class="flex flex-row-reverse md:flex-row justify-around">
-                <div class="">
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+        <nav class="md:bg-[#F85559] p-6 rounded-full flex justify-between items-center">
+            <div class="order-1 lg:order-1">
+                <div class="dropdown flex flex-row-reverse w-10/12 mx-auto">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16">
+                            </path>
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-b text-base">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-lg text-white font-medium menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-center items-center lg:order-2">
+                <img src="./images/logo.png" alt="logo">
+                <a class="btn btn-ghost normal-case text-xl lg:text-4xl font-bold lg:text-white">Fruit Burst</a>
+            </div>
+            <div class="hidden lg:block lg:order-3">
+                <div class="form-control">
+                    <div class="input-group bg-white rounded-full p-6 justify-around">
+                        <input type="text" placeholder="Search here" class=" ">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h7" />
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                             </svg>
-                        </label>
-                        <div class="navbar-center hidden lg:flex">
-                            <ul class="menu text-lg text-white font-medium menu-horizontal px-1">
-                                <li><a>Home</a></li>
-                                <li><a>About Us</a></li>
-                                <li><a>Shop</a></li>
-                                <li><a>All Fruits</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-center items-center">
-                    <img src="./images/logo.png" alt="logo">
-                    <a class="btn btn-ghost normal-case text-xl lg:text-4xl font-bold lg:text-white">Fruit Burst</a>
-                </div>
-                <div class="">
-                    <div class="form-control">
-                        <div class="input-group bg-white rounded-full p-6 justify-around">
-                            <input type="text" placeholder="Search here" class=" " />
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                </svg>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -185,7 +191,8 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden lg:visible lg:absolute lg:flex lg:gap-24 lg:bg-white lg:px-16 lg:py-5 lg:bottom-[-78px] lg:right-[160px]">
+            <div
+                class="hidden lg:visible lg:absolute lg:flex lg:gap-24 lg:bg-white lg:px-16 lg:py-5 lg:bottom-[-78px] lg:right-[160px]">
                 <div>
                     <img src="./images/fruit1.png" alt="">
                     <p class="text-[#121212CC] font-medium text-xl text-center">Olive</p>
