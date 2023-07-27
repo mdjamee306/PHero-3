@@ -80,6 +80,7 @@
                 </div>
             </div>
         </nav>
+        <!-- slider container -->
         <section class="relative">
             <!-- slider start here -->
             <div class="carousel w-full mt-7 lg:mt-14">
@@ -184,26 +185,26 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:absolute lg:flex lg:gap-24 lg:bg-white lg:px-16 lg:py-5 lg:bottom-[-90px] lg:right-[190px]">
+            <div class="hidden lg:visible lg:absolute lg:flex lg:gap-24 lg:bg-white lg:px-16 lg:py-5 lg:bottom-[-78px] lg:right-[160px]">
                 <div>
                     <img src="./images/fruit1.png" alt="">
+                    <p class="text-[#121212CC] font-medium text-xl text-center">Olive</p>
+                </div>
+                <div>
+                    <img src="./images/fruit2.png" alt="">
+                    <p class="text-[#121212CC] font-medium text-xl text-center">Orange</p>
+                </div>
+                <div>
+                    <img src="./images/fruit3.png" alt="">
+                    <p class="text-[#121212CC] font-medium text-xl text-center">Mango</p>
+                </div>
+                <div>
+                    <img src="./images/fruit4.png" alt="">
                     <p class="text-[#121212CC] font-medium text-xl text-center">Strawberry</p>
                 </div>
                 <div>
-                    <img src="./images/fruit1.png" alt="">
-                    <p class="text-[#121212CC] font-medium text-xl text-center">Strawberry</p>
-                </div>
-                <div>
-                    <img src="./images/fruit1.png" alt="">
-                    <p class="text-[#121212CC] font-medium text-xl text-center">Strawberry</p>
-                </div>
-                <div>
-                    <img src="./images/fruit1.png" alt="">
-                    <p class="text-[#121212CC] font-medium text-xl text-center">Strawberry</p>
-                </div>
-                <div>
-                    <img src="./images/fruit1.png" alt="">
-                    <p class="text-[#121212CC] font-medium text-xl text-center">Strawberry</p>
+                    <img src="./images/fruit5.png" alt="">
+                    <p class="text-[#121212CC] font-medium text-xl text-center">Pomegranate</p>
                 </div>
             </div>
         </section>
@@ -253,7 +254,7 @@
             <!--fruits card -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-12">
                 <!-- card 1 -->
-                <div class="border-2 rounded-lg drop-shadow-lg w-11/12 mx-auto">
+                <div class="border w-11/12 mx-auto">
                     <figure class="px-10 pt-10 flex justify-center">
                         <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -261,17 +262,50 @@
                         <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
                         <p class="font-medium text-[#12121299]">Apples</p>
                         <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                         </div>
-                        <a href="" class="text-[#F85559]">Details</a>
+                        <!-- modal 1 starts from here -->
+                        <button class="text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <form method="dialog" class="modal-box">
+                                <!-- modal image -->
+                                <div class="w-11/12 mx-auto">
+                                    <figure class="px-10 pt-10 flex justify-center">
+                                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <!-- modal title starts here -->
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title text-xl font-bold py-2 px-8">Apples</h2>
+                                        <p class="font-normal text-[#12121299]">Professional employees are there for you
+                                            to pick the most amazing and fresh fruits.</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-action justify-evenly">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button
+                                            class="border border-[#F85559] rounded-lg font-extrabold text-base text-[#F85559] px-5 py-3 bg-transparent">Close</button>
+                                        <button
+                                            class="rounded-lg font-extrabold text-base text-white px-8 py-5 bg-[#F85559]">Buy
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="border-2 rounded-lg drop-shadow-lg w-11/12 mx-auto">
+                <div class="border w-11/12 mx-auto">
                     <figure class="px-10 pt-10 flex justify-center">
                         <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -285,31 +319,45 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                         </div>
-                        <a href="" class="text-[#F85559]">Details</a>
+                        <!-- modal 2 starts from here -->
+                        <button class="text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
+                        <dialog id="my_modal_2" class="modal">
+                            <form method="dialog" class="modal-box">
+                                <!-- modal image -->
+                                <div class="w-11/12 mx-auto">
+                                    <figure class="px-10 pt-10 flex justify-center">
+                                        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <!-- modal title starts here -->
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title text-xl font-bold py-2 px-8">Orange</h2>
+                                        <p class="font-normal text-[#12121299]">Professional employees are there for you
+                                            to pick the most amazing and fresh fruits.</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-action justify-evenly">
+                                        <button
+                                            class="border border-[#F85559] rounded-lg font-extrabold text-base text-[#F85559] px-5 py-3 bg-transparent">Close</button>
+                                        <button
+                                            class="rounded-lg font-extrabold text-base text-white px-8 py-5 bg-[#F85559]">Buy
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="border-2 rounded-lg drop-shadow-lg w-11/12 mx-auto">
+                <div class="border w-11/12 mx-auto">
                     <figure class="px-10 pt-10 flex justify-center">
                         <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
-                        <p class="font-medium text-[#12121299]">Banana</p>
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio " name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                        </div>
-                        <a href="" class="text-[#F85559]">Details</a>
-                    </div>
-                </div>
-                <!-- card 4 -->
-                <div class="border-2 rounded-lg drop-shadow-lg w-11/12 mx-auto">
-                    <figure class="px-10 pt-10 flex justify-center">
-                        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
@@ -321,7 +369,89 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                         </div>
-                        <a href="" class="text-[#F85559]">Details</a>
+                        <!-- modal 3 starts from here -->
+                        <button class="text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+                        <dialog id="my_modal_3" class="modal">
+                            <form method="dialog" class="modal-box">
+                                <!-- modal image -->
+                                <div class="w-11/12 mx-auto">
+                                    <figure class="px-10 pt-10 flex justify-center">
+                                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <!-- modal title starts here -->
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title text-xl font-bold py-2 px-8">Red Dragon</h2>
+                                        <p class="font-normal text-[#12121299]">Professional employees are there for you
+                                            to pick the most amazing and fresh fruits.</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-action justify-evenly">
+                                        <button
+                                            class="border border-[#F85559] rounded-lg font-extrabold text-base text-[#F85559] px-5 py-3 bg-transparent">Close</button>
+                                        <button
+                                            class="rounded-lg font-extrabold text-base text-white px-8 py-5 bg-[#F85559]">Buy
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="border w-11/12 mx-auto">
+                    <figure class="px-10 pt-10 flex justify-center">
+                        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold py-2 px-8 border-b">12.90$ - 18.85$</h2>
+                        <p class="font-medium text-[#12121299]">Banana</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <!-- modal 2 starts from here -->
+                        <button class="text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+                        <dialog id="my_modal_4" class="modal">
+                            <form method="dialog" class="modal-box">
+                                <!-- modal image -->
+                                <div class="w-11/12 mx-auto">
+                                    <figure class="px-10 pt-10 flex justify-center">
+                                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <!-- modal title starts here -->
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title text-xl font-bold py-2 px-8">Banana</h2>
+                                        <p class="font-normal text-[#12121299]">Professional employees are there for you
+                                            to pick the most amazing and fresh fruits.</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-action justify-evenly">
+                                        <button
+                                            class="border border-[#F85559] rounded-lg font-extrabold text-base text-[#F85559] px-5 py-3 bg-transparent">Close</button>
+                                        <button
+                                            class="rounded-lg font-extrabold text-base text-white px-8 py-5 bg-[#F85559]">Buy
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
                     </div>
                 </div>
             </div>
